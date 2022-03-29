@@ -28,35 +28,12 @@ var totalCarrito = 0;
 //Esta función permite obtener el precio a partir del código del producto
 function obtenerPrecioProducto(codigoProducto) {
     let precio = 0;
-    switch (codigoProducto) {
-        case "v001":
-            precio = 1220;
-            break;
-        case "v002":
-            precio = 1220;
-            break;
-        case "v003":
-            precio = 820;
-            break;
-        case "v004":
-            precio = 610;
-            break;
-        case "v005":
-            precio = 820;
-            break;
-        case "v006":
-            precio = 1220;
-            break;
-        case "v007":
-            precio = 820;
-            break;
-        case "v008":
-            precio = 830;
-            break;
-
-        default:
-
-            break;
+    //Se busca el precio del producto ingresado mediante su código usando Método Find 
+    let prodSeleccionado = productos.find(producto => producto.codigo == codigoProducto);
+    if (prodSeleccionado) {
+        precio = prodSeleccionado.precio;
+        
+        console.log(prodSeleccionado);
     }
     return precio;
 }
