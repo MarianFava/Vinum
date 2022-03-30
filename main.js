@@ -32,7 +32,7 @@ function obtenerPrecioProducto(codigoProducto) {
     let prodSeleccionado = productos.find(producto => producto.codigo == codigoProducto);
     if (prodSeleccionado) {
         precio = prodSeleccionado.precio;
-        
+
         console.log(prodSeleccionado);
     }
     return precio;
@@ -42,7 +42,8 @@ function ingresarProducto() {
     var codigoIngresado;
 
     do {
-        codigoIngresado = prompt("Ingrese código de producto.V001, V002, V003, V004, V005, V006, V007, V008. Ingrese 'Q' para finalizar la compra.");
+        codigoIngresado = prompt("Ingrese código de producto.V001, V002, V003, V004, V005, V006, V007, V008. Ingrese 'Q' para finalizar la compra.").toUpperCase();
+        
         let precio = obtenerPrecioProducto(codigoIngresado);
         //Ingresando el valor Q se termina la repetición, finaliza el ciclo y vemos el total de la compra
         if (precio == 0 && codigoIngresado != "Q") {
