@@ -135,7 +135,7 @@ hr{
   }
 }
 /*Seccion Vinos*/
-.cardsCatalogo{
+#catalogoVinos ,#catalogoGin ,#catalogoWhiskey{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2,1fr);
@@ -163,7 +163,9 @@ hr{
 .card-img-top{
   height: 282px;
 }
-/*Seccion Gin*/
+.precio{
+  font-size: 25px;
+}
 /*Footer*/
 footer{
   background-color: rgb(90, 89, 89);
