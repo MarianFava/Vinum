@@ -102,7 +102,7 @@ hr{
     border: 2px solid;
 }
 /*Estilos Cards*/
-.btn{
+#btn{
   margin-top: 5px;
   text-decoration: none;
   color: #fff;
@@ -113,7 +113,7 @@ hr{
   animation: gradient 10s linear infinite;
   position: relative;
 }
-.btn::before{
+#btn::before{
   content: "";
   position: absolute;
   width: 100%;

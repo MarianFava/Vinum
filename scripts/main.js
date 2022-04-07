@@ -108,3 +108,16 @@ for(const dato of productos.filter(producto => producto.tipo == "Gin")){
 for(const dato of productos.filter(producto => producto.tipo == "Whiskey")){
     dibujarCard(dato, "catalogoWhiskey");
 }
+
+//EVENTO Click
+
+
+let boton = document.getElementsByClassName("btn btn-primary");
+let numBoton = boton.length;
+
+function agregarAlCarrito(){
+    alert("Se agrego al carrito")
+}
+for (let i = 0; i < numBoton; i++) {
+    boton[i].addEventListener('click', agregarAlCarrito, false);
+  }
