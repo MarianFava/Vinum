@@ -54,7 +54,41 @@ h1{
   font-size: 80px;
   text-shadow: 2px 2px 5px whitesmoke;
 }
-
+#caja-carrito{
+  display: block;
+  position: relative;
+  margin: auto
+}
+.icono-header{
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+#icono-carrito{
+  display: block;
+  margin: 0 auto 10px auto;
+  padding-top: 5px;
+}
+#contador-carrito{
+  position: absolute;
+  top: 0;
+  left: 55%;
+  background: #FFF;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F00;
+  font-weight: bolder;
+  padding: 2px;
+}
+#caja-carrito{
+  display: block;
+  position: relative;
+  margin: auto
+}
 /*Inicio Main*/
 main{
   height: 4600px;
