@@ -1,3 +1,23 @@
+//Implementando librerías(Sweet Alert)
+Swal.fire({
+    title: 'Bienvenido a Vinum',
+    text: "Es mayor de 18 años?",
+    showCancelButton: true,
+    confirmButtonColor: '#40DFEF',
+    cancelButtonColor: '#FF6363',
+    cancelButtonText:'No, soy menor',
+    confirmButtonText: 'Sí, lo soy'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire(
+        'Podés empezar a comprar'
+      )
+    }else{
+        Swal.fire(
+            'Volvé cuando cumplas 18'
+        )
+    }
+  })
 //Declaración del array productos
 const productos = [];
 //Declaración de la clase
@@ -38,7 +58,10 @@ productos.push(new Producto("W006","Johnny Walk. Black","Whiskey","Scotch","Esco
 productos.push(new Producto("W007","Johnny Walker Red","Whiskey","Scotch","Escocia",2700,"./media/WhiskeyJohnnyRed.jpeg"));
 productos.push(new Producto("W008","Variedades Jim Bean","Whiskey","Scotch","EEUU",11000,"./media/WhiskeyJimBean.jpeg"));
 
-
+//Acceso condicional a un objeto
+console.log(productos?.calificacion || "La calificación no esta definida");
+//Desestructuración de un objeto
+const {tipo, variedad} = productos;
 
 //Variable global que contiene el total de productos incorporados al carrito
 var totalCarrito = 0;
