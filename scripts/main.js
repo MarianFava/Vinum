@@ -58,6 +58,11 @@ productos.push(new Producto("W006","Johnny Walk. Black","Whiskey","Scotch","Esco
 productos.push(new Producto("W007","Johnny Walker Red","Whiskey","Scotch","Escocia",2700,"./media/WhiskeyJohnnyRed.jpeg"));
 productos.push(new Producto("W008","Variedades Jim Bean","Whiskey","Scotch","EEUU",11000,"./media/WhiskeyJimBean.jpeg"));
 
+//Llamada asincrónica
+fetch("/data/productos.json")
+    .then(response => response.json())
+    .then(json => console.log(json));
+    
 //Acceso condicional a un objeto
 console.log(productos?.calificacion || "La calificación no esta definida");
 //Desestructuración de un objeto

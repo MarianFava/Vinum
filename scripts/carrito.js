@@ -30,7 +30,7 @@ function agregarAlCarrito(evento){
         close: true,
         gravity: "top",
         position: "right",
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        stopOnFocus: true,
         style: {
           background: "linear-gradient(to right, #f50792, #f478f8)",
         },
@@ -56,4 +56,4 @@ for (let i = 0; i < numBoton; i++) {
 }
 dibujarCarrito();
 
-//Implementacion de Libreria Toastify
+
