@@ -36,7 +36,7 @@ class Producto {
 }
 
 //Llamada asincrónica
-fetch("/data/productos.json")
+fetch("../data/productos.json")
     .then(response => response.json())
     .then(json => {
         productos = [...json];
