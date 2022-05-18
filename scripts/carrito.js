@@ -38,16 +38,16 @@ function dibujarCarrito(){
     carrito.forEach(itemCarrito =>{
         cantidadProductos = cantidadProductos + itemCarrito.cantidad;
     });
-    //Actualizacion de contador de productos de carrito
+    //Actualización de contador de productos de carrito
     document.getElementById("contador-carrito").innerHTML=cantidadProductos;
     //Se obtiene cuerpo de modal
     let cuerpoModal = document.getElementById("cuerpoModal");
     cuerpoModal.innerHTML="";
-    //Se crea el contenedor donde irá del detalle del carrito en el modal
+    //Se crea el contenedor donde irá el detalle del carrito en el modal
     let container = document.createElement("div");
     container.classList.add("container");
 
-    //Titulo de la lista de productos en el carrito
+    //Título de la lista de productos en el carrito
     container.innerHTML = `<div class="row">
     <div class="col">
     </div>
