@@ -36,7 +36,7 @@ class Producto {
 }
 
 //Llamada asincrónica
-fetch("data/productos.json")
+fetch("https://marianfava.github.io/Vinum/data/productos.json")
 
     .then(response => response.json())
     .then(json => {
